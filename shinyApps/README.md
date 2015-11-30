@@ -17,38 +17,50 @@ the course --- run the following command in R:
 Once you have the required packages installed, run the following code 
 to, for example, see the demo of `simpleHistogram` application:
 
-	library(shiny)
-	runGitHub('mlakolar/BUS41000', 
-				subdir = 'shinyApps/simpleHistogram',  
-				launch.browser = T)
+	shiny::runGitHub('mlakolar/BUS41000', 
+					subdir = 'shinyApps/simpleHistogram',  
+					launch.browser = T)
 
 In order to run other applications, try
 
-	runGitHub('mlakolar/BUS41000', 
-				subdir = 'shinyApps/<nameOfApplication>',  
-				launch.browser = T)
+	shiny::runGitHub('mlakolar/BUS41000', 
+					subdir = 'shinyApps/<nameOfApplication>',  
+					launch.browser = T)
 
 where `<nameOfApplication>` should be substituted by one of the names below.
 
+
+* [Lecture 01](#lecture-01)
+  * [simpleHistogram](#simplehistogram)
+  * [wikiPageViews](#wikipageviews)
+  * [bivariateCorrelation](#bivariatecorrelation)
+  * [studentHeightWeight](#studentheightweight)
 
 ## Lecture 01
 
 ### simpleHistogram
 
-Illustration of the effect of number of bins on the appearance of a histogram.
+Illustration of the effect of number of bins on the appearance of a histogram.  
+DEMO: [link](#)
+
 
 ### wikiPageViews
 
-Wikipedia Page Views Statistics. Plots Wikipedia article traffic statistics. 
+Wikipedia Page Views Statistics. Plots Wikipedia article traffic statistics.    
+DEMO: [link](#)
+
 
 ### bivariateCorrelation
 
 Scatter plot of two variables. Explore how does the sample correlation affect 
-the plot.
+the plot.   
+DEMO: [link](#)
+
 
 ### studentHeightWeight
 
 Height and weight of schoolchildren
+DEMO: [link](#)
 
 
 
