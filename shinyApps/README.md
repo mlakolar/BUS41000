@@ -3,15 +3,22 @@ Many of them are modifications of applications I found online.
 
 # Lecture 01
 
-## Simple Histograms
+## simpleHistogram
 
 Illustration of the effect of number of bins on the appearance of a histogram.
 
-## Wikipedia Page Views Statistics
+## wikiPageViews
 
-Plots Wikipedia article traffic statistics. 
+Wikipedia Page Views Statistics. Plots Wikipedia article traffic statistics. 
 
-## Height and weight of schoolchildren
+## bivariateCorrelation
+
+Scatter plot of two variables. Explore how does the sample correlation affect 
+the plot.
+
+## studentHeightWeight
+
+Height and weight of schoolchildren
 
 
 
