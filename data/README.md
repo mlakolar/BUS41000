@@ -1,11 +1,13 @@
 Table of Contents
 =================
 
+  * [Table of Contents](#table-of-contents)
   * [Datasets for BUS41000](#datasets-for-bus41000)
     * [bank.csv](#bankcsv)
     * [BeerConsumptionMBA.csv](#beerconsumptionmbacsv)
     * [bostonMarathon.csv](#bostonmarathoncsv)
     * [CountryMonthlyReturns.csv](#countrymonthlyreturnscsv)
+    * [heightweight.csv](#heightweightcsv)
     * [marketing.csv](#marketingcsv)
     * [oldfaithful.csv](#oldfaithfulcsv)
 
@@ -29,6 +31,8 @@ Data was obtained from [llimllib/bostonmarathon](https://github.com/llimllib/bos
 ## CountryMonthlyReturns.csv
 
 Monthly return data on country's broadband portfolios from Feb 1988 till Dec 1996.
+
+## heightweight.csv
 
 ## marketing.csv
 
