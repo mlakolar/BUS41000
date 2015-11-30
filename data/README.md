@@ -1,3 +1,5 @@
+## Datasets for BUS41000
+
 * [bank.csv](#bankcsv)
 * [BeerConsumptionMBA.csv](#beerconsumptionmbacsv)
 * [bostonMarathon.csv](#bostonmarathoncsv)
@@ -6,7 +8,6 @@
 * [marketing.csv](#marketingcsv)
 * [oldfaithful.csv](#oldfaithfulcsv)
 
-Datasets for BUS41000
 
 ### bank.csv
 
