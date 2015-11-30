@@ -28,6 +28,10 @@ Data was obtained from [llimllib/bostonmarathon](https://github.com/llimllib/bos
 
 Monthly return data on country's broadband portfolios from Feb 1988 till Dec 1996.
 
+### GSPC.csv
+
+Standard & Poors 500 Index from Jan 2002 till Sept 2015.
+
 ### heightweight.csv
 
 Height and weight of schoolchildren.

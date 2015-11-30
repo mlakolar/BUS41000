@@ -7,7 +7,7 @@ packageNames = c(
 	"plyr",
 	"lubridate",
 	"stringr"
-	)
+)
 
 for (pkgName in packageNames) {
   if (! (pkgName %in% rownames(installed.packages()))) { 
