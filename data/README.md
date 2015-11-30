@@ -1,43 +1,40 @@
-Table of Contents
-=================
+* [bank.csv](#bankcsv)
+* [BeerConsumptionMBA.csv](#beerconsumptionmbacsv)
+* [bostonMarathon.csv](#bostonmarathoncsv)
+* [CountryMonthlyReturns.csv](#countrymonthlyreturnscsv)
+* [heightweight.csv](#heightweightcsv)
+* [marketing.csv](#marketingcsv)
+* [oldfaithful.csv](#oldfaithfulcsv)
 
-  * [Table of Contents](#table-of-contents)
-  * [Datasets for BUS41000](#datasets-for-bus41000)
-    * [bank.csv](#bankcsv)
-    * [BeerConsumptionMBA.csv](#beerconsumptionmbacsv)
-    * [bostonMarathon.csv](#bostonmarathoncsv)
-    * [CountryMonthlyReturns.csv](#countrymonthlyreturnscsv)
-    * [heightweight.csv](#heightweightcsv)
-    * [marketing.csv](#marketingcsv)
-    * [oldfaithful.csv](#oldfaithfulcsv)
+Datasets for BUS41000
 
-# Datasets for BUS41000
-
-## bank.csv
+### bank.csv
 
 Interarrival times of customers to a bank.
 
-## BeerConsumptionMBA.csv
+### BeerConsumptionMBA.csv
 
 A survey of Booth MBA students.
 
-## bostonMarathon.csv
+### bostonMarathon.csv
 
 Data containing official fininshing time, gender and age of runners 
 competing in Boston Marathon from 2001 to 2014.
 
 Data was obtained from [llimllib/bostonmarathon](https://github.com/llimllib/bostonmarathon).
 
-## CountryMonthlyReturns.csv
+### CountryMonthlyReturns.csv
 
 Monthly return data on country's broadband portfolios from Feb 1988 till Dec 1996.
 
-## heightweight.csv
+### heightweight.csv
 
-## marketing.csv
+Height and weight of schoolchildren.
+
+### marketing.csv
 
 British marketing survey 
 
-## oldfaithful.csv
+### oldfaithful.csv
 
 A version of the eruptions data from the ‘Old Faithful’ geyser in Yellowstone National Park, Wyoming. This version comes from Azzalini and Bowman (1990) and is of continuous measurement from August 1 to August 15, 1985.
