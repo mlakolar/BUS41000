@@ -38,7 +38,7 @@ You can download it from [here](https://www.rstudio.com/products/rstudio/downloa
 
 ### Additional resources
 
-Many people are using R and you will often find a solution to your problem via Google.
+Many people are using R and you will often find a solution to your problem via Google.  
 For example, [How to make a histogram in R](http://lmgtfy.com/?q=How+to+make+a+histogram+in+R).
 
 Me, TA, and your classmates. Ask questions on the discussion board [Piazza](https://piazza.com/chicagobooth/spring2016/bus41000/home),
