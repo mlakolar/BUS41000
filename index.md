@@ -10,6 +10,6 @@ layout: default
 
 [Syllabus](syllabus)  
 [Lectures](lectures)  
-[Piazza Q&A](https://piazza.com/chicagobooth/spring2016/bus41000/home)  
+[Piazza Q&A](https://piazza.com/chicagobooth/spring2016/bus41000/home)  --- [Self-enrollment](https://piazza.com/chicagobooth/spring2016/bus41000) with a _chicagobooth.edu_ email address.
 
 **Project:** Assignment will be posted after midterm. [Example Project](https://github.com/mlakolar/BUS41000/raw/master/files/example_project.pdf)
