@@ -6,7 +6,8 @@ packageNames = c(
 	"RJSONIO",
 	"plyr",
 	"lubridate",
-	"stringr"
+	"stringr",
+	"maptools"
 )
 
 for (pkgName in packageNames) {
