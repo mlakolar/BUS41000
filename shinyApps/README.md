@@ -34,6 +34,7 @@ where `<nameOfApplication>` should be substituted by one of the names below.
   * [simpleHistogram](#simplehistogram)
   * [wikiPageViews](#wikipageviews)
   * [bivariateCorrelation](#bivariatecorrelation)
+  * [correlationGame](#correlationgame)
   * [studentHeightWeight](#studentheightweight)
 
 ## Lecture 01
@@ -55,6 +56,11 @@ DEMO: [link](https://mlakolar.shinyapps.io/wikiPageViews/)
 Scatter plot of two variables. Explore how does the sample correlation affect
 the plot.   
 DEMO: [link](https://mlakolar.shinyapps.io/bivariateCorrelation/)
+
+## correlationGame
+
+Guess the correlation between two variables. Taken from [https://github.com/ShinyEd/ShinyEd](https://github.com/ShinyEd/ShinyEd).  
+DEMO: [link](https://mlakolar.shinyapps.io/correlationGame/)
 
 
 ### studentHeightWeight
