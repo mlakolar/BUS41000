@@ -8,7 +8,9 @@ packageNames = c(
 	"lubridate",
 	"stringr",
 	"maptools",
-	"ellipse"
+	"ellipse",
+	"openintro",
+	"tigerstats"
 )
 
 for (pkgName in packageNames) {
