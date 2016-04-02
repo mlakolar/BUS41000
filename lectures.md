@@ -11,7 +11,7 @@ permalink: /lectures/
 Review session:
 [Video]() (will be added on Monday),
 [R](https://github.com/mlakolar/BUS41000/raw/master/recitations/01_recitation.R),
-[R Markdown](https://github.com/mlakolar/BUS41000/raw/master/recitations/recitations/hw01_starter.pdf)     
+[R Markdown](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw01_starter.pdf)     
 Homework:
 [Questions](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imfe2fpjwhw7fk),
 [Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imfe2fso2fb7fp) ---
