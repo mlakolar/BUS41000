@@ -1,0 +1,137 @@
+---
+title: "BUS 41000 R Usage Showcase"
+author: "Richard Chen"
+date: "March 29, 2016"
+output: pdf_document
+---
+
+# Note
+
+We will use the free statistics package R, which can be downloaded from [http://www.r-project.org](http://www.r-project.org).
+For working with R, I strongly recommend the free software RStudio, which is available for Windows, Mac, and Linux, from [http://www.rstudio.com](http://www.rstudio.com). 
+This document is prepared by R Markdown. 
+This is a convenient tool for creating reports that have embeded R output.  
+This tool may be useful for preparing your final project. 
+In order to create this file yourself, download [hw01_starter.Rmd](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw01_starter.Rmd) 
+and pres Knit PDF. 
+RStudio may ask you to install additional packages.
+To start learning about R Markdown, go here: [http://rmarkdown.rstudio.com/](http://rmarkdown.rstudio.com/).
+
+
+In the following, R codes are followed by R output. For any R function which you feel confused about, please utilize the help function in R for detailed instructions. For example, function ```cor()``` help use to compute correlation (matrices), if you would like to know the details of its usage, input the R command ```help(cor)```.
+
+# R Code Example for Question 1
+
+The data in this example is from the file "[CountryMonthlyReturns2.csv](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns2.csv)". We care about the monthly returns from Japan and Canada.
+First of all, we should read the data into R.
+
+However, before we input the required data, we should know and specify the working directory first, all the line but the last is R comment, uncomment the last line (deleting the # sign), and put your preferred location as the working directory. You can also check the directory by ```getwd()```.
+
+```{r}
+################################ 
+#   Country Monthly Returns -- 2
+################################
+
+# Monthly return data on country's broadband portfolios from Jan 1996 till Aug 2014.
+
+# set working directory
+# you should change the folder to a location on your own computer
+# setwd("input your prefered location here")
+```
+
+Now we are ready to download and read the data
+```{r}
+# download data to the current working folder
+download.file("https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns2.csv", 
+              destfile="CountryMonthlyReturns2.csv")
+
+countryReturn_df = read.csv("CountryMonthlyReturns2.csv")
+```
+
+As an initial check, let's see the histogram of some variables:
+```{r}
+# plot histrograms
+hist(countryReturn_df$Japan, 
+     breaks = 10, # this parameter controls number of bins
+     xlab = "returns", ylab = "Frequency", main="Japanese returns")
+
+hist(countryReturn_df$Canada, 
+     breaks = 10, 
+     xlab = "returns", ylab = "Frequency", main="Canadian returns")
+# to save image, click on export and "Save as Image"
+```
+
+
+We can also see some temporal trend via plotting the time series:
+```{r}
+plot(x=as.Date(paste0(countryReturn_df$Date, "-01"), format = "%m/%d/%Y"), 
+     y=countryReturn_df$Canada, type="l", col="blue", 
+     xlab="", ylab="Canadian returns", main = "")
+abline(h=0)
+
+plot(x=as.Date(paste0(countryReturn_df$Date, "-01"), format = "%m/%d/%Y"), 
+     y=countryReturn_df$Japan, type="l", col="blue", 
+     xlab="", ylab="Japanese returns", main = "")
+abline(h=0)
+```
+
+We can also compute the mean and standard deviations, as an numberically measure of data fecture":
+```{r}
+mean(countryReturn_df$Canada); sd(countryReturn_df$Canada)
+mean(countryReturn_df$Japan); sd(countryReturn_df$Japan)
+```
+
+According to the empirical rule, 95% of the data approximately locate in the interval $[\mu-2s,\mu+2s]$, we can approximate the intervals which contain about 95% of the data of the variables:
+```{r}
+c(mean(countryReturn_df$Japan)-2*sd(countryReturn_df$Japan),mean(countryReturn_df$Japan)+2*sd(countryReturn_df$Japan))
+c(mean(countryReturn_df$Canada)-2*sd(countryReturn_df$Canada),mean(countryReturn_df$Canada)+2*sd(countryReturn_df$Canada))
+```
+
+Scatter plot of the two variables:
+```{r}
+plot(x=countryReturn_df$Japan, y=countryReturn_df$Canada, 
+     type="p", col="black",                                
+     cex = 0.5,                                  # controls size of points
+     xlab="Canadian returns", ylab="Japanese returns", main = "Japanese vs Canadian returns")
+```
+
+The covariance and correlation between the two series can be computed by:
+```{r}
+cov(countryReturn_df$Japan,countryReturn_df$Canada)
+cor(countryReturn_df$Japan,countryReturn_df$Canada)
+```
+
+We can use the build-in function "cor()" to compute the correlation matrix of all the variables in the data set:
+```{r}
+cor(countryReturn_df[,-1]) # the first column is the date, irrelavent for the corrrelation matrix
+```
+
+# Example Code for Question 4
+
+First prepare the data:
+```{r}
+library(fImport)
+Y=yahooSeries("BRK-A", from="1990-01-01")
+y=rev(Y$'BRK-A.Adj.Close')
+n=length(y)
+rets=y[-1]/y[-n]-1
+summary(rets)
+```
+
+Then visualize the data by time series plot and histogram:
+```{r}
+plot(rets,pch=20,col=24,cex=0.5)
+abline(0,0)
+
+hist(rets,breaks=50,freq=FALSE,main="GE Returns",col="red")
+```
+
+```{r}
+# find the highest return
+iMax = which(rets == max(rets))        # index of the highest return
+rets[iMax]                             # largest return
+
+# find the lowest return
+iMin = which(rets == min(rets))        # index of the lowest return
+rets[iMin]                             # lowest return
+```
