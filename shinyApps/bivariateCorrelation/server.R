@@ -7,6 +7,9 @@ shinyServer(function(input,output){
   output$distPlot<-renderPlot({
       n     <- input$obs             # length of vector
       rho   <- input$rho             # desired correlation = cos(angle)
+      if(rho == 1)
+        rho = 0.9999
+      end
       theta <- acos(rho)             # corresponding angle
       x1    <- rnorm(n, 0, 1)        # fixed given data
       x2    <- rnorm(n, 0, 1)        # new random data

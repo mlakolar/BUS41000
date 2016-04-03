@@ -35,7 +35,11 @@ where `<nameOfApplication>` should be substituted by one of the names below.
   * [wikiPageViews](#wikipageviews)
   * [bivariateCorrelation](#bivariatecorrelation)
   * [correlationGame](#correlationgame)
-  * [studentHeightWeight](#studentheightweight)
+
+* [Lecture 02](#lecture-02)
+  * [twoAssetPortfolio](#twoassetportfolio)
+	* [studentHeightWeight](#studentheightweight)
+
 
 ## Lecture 01
 
@@ -63,7 +67,14 @@ Guess the correlation between two variables. Taken from [https://github.com/Shin
 DEMO: [link](https://mlakolar.shinyapps.io/correlationGame/)
 
 
+## Lecture 02
+
 ### studentHeightWeight
 
-Height and weight of schoolchildren  
+Height and weight of schoolchildren    
 DEMO: [link](https://mlakolar.shinyapps.io/studentHeightWeight/)
+
+### twoAssetPortfolio
+
+Illustrating effect of correlation on the returns of a portfolio   
+DEMO: [link](https://mlakolar.shinyapps.io/twoAssetPortfolio/)
