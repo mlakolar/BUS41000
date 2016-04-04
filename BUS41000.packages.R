@@ -11,7 +11,8 @@ packageNames = c(
 	"ellipse",
 	"openintro",
 	"tigerstats",
-	"animation"
+	"animation",
+	"xlsx"
 )
 
 for (pkgName in packageNames) {
