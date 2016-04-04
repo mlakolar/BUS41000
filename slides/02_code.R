@@ -70,9 +70,9 @@ var(port_df$port1) == (0.5)^2*var(port_df$honkong)+(0.5)^2*var(port_df$usa)+2*0.
 download.file("https://raw.githubusercontent.com/mlakolar/BUS41000/master/data/mutualFundReturn.csv", destfile="mutualFundReturn.cvs")
 
 mfr_df = read.csv("mutualFundReturn.cvs")
-
-
-
+port_df = countryReturn_df[,c("VWNDX", "PTTRX", "LBF")]
+port_df$port = 0.1*port_df$VWNDX + 0.7*port_df$PTTRX + 0.2*port_df$LBF
+cov(port_df)
 
 
 ############################### 
@@ -104,3 +104,48 @@ plot(homep_df$size, homep_df$price, xlab="Size (sq. feet)", ylab="Price")
 abline(reg, lw=2, col="green")
 lines(x=c(2200, 2200), y=c(0, yhat), col="blue", lty=2)
 lines(x=c(0, 2200), y=c(yhat, yhat), col="blue", lty=2)
+
+
+
+############################### 
+#   Shopping attitudes 
+###############################
+
+
+# download data to the current working folder
+download.file("https://raw.githubusercontent.com/mlakolar/BUS41000/master/data/shopping.csv", destfile="shopping.csv")
+
+shopping_df = read.csv("shopping.csv")
+
+
+
+
+############################### 
+#   European Protein Consumption
+###############################
+
+# *** European Protein Consumption, in grams/person-day *** 
+
+download.file("https://raw.githubusercontent.com/mlakolar/BUS41000/master/data/protein.csv", destfile="protein.csv")
+
+food_df = read.csv("protein.csv", row.names=1) # 1st column is country name
+# scale the data so that every column has sample mean equal to zero and variance equal to 1
+food_scaled = scale(food)  
+
+## first, consider just Red and White meat clusters
+(grpMeat <- kmeans(xfood[,c("WhiteMeat","RedMeat")], centers=3, nstart=10))
+
+plot(xfood[,"RedMeat"], xfood[,"WhiteMeat"], xlim=c(-2,2.75), 
+     type="n", xlab="Red Meat", ylab="White Meat")
+text(xfood[,"RedMeat"], xfood[,"WhiteMeat"], labels=rownames(food), 
+     col=rainbow(3)[grpMeat$cluster])
+
+## same plot, but now with clustering on all protein groups
+grpProtein <- kmeans(xfood, centers=7, nstart=50) ## change the number of centers to see what happens.
+grpProtein
+
+plot(xfood[,"RedMeat"], xfood[,"WhiteMeat"], xlim=c(-2,2.75), 
+     type="n", xlab="Red Meat", ylab="White Meat")
+text(xfood[,"RedMeat"], xfood[,"WhiteMeat"], labels=rownames(food), 
+     col=rainbow(7)[grpProtein$cluster]) ## col is all that differs from first plot
+
