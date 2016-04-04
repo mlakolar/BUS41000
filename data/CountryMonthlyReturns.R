@@ -115,3 +115,33 @@ pairs(countryReturn_df[,2:6])
 cov(countryReturn_df[,2:6])
 # correlation matrix 
 cor(countryReturn_df[,2:6])
+
+
+### week 2: portfolio
+
+port_df = countryReturn_df[,c("usa", "honkong")]
+port_df$port1 = 0.5*port_df$honkong + 0.5*port_df$usa
+head(port_df)
+
+mean(port_df$honkong)
+mean(port_df$usa)
+mean(port_df$port1)
+
+var(port_df$honkong)
+var(port_df$usa)
+var(port_df$port1)
+
+sd(port_df$honkong)
+sd(port_df$usa)
+sd(port_df$port1)
+
+0.5*(sd(port_df$honkong) + sd(port_df$usa))
+sd(port_df$port1) < 0.5*(sd(port_df$honkong) + sd(port_df$usa))
+
+mcr = sapply(port_df, mean)            # compute mean for each column
+sdcr = sapply(port_df, sd)             # compute standard deviation for each column  
+plot(sdcr, mcr, type="p", main="Scatter for the portfolio with equal weights", xlab = "std. dev.", ylab = "mean", cex=0.7)
+pointLabel(sdcr, mcr, labels=names(mcr), cex= 1)
+
+cov(port_df)
+var(port_df$port1) == (0.5)^2*var(port_df$honkong)+(0.5)^2*var(port_df$usa)+2*0.5*0.5*cov(port_df$honkong, port_df$usa)
