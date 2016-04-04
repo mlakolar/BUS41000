@@ -10,7 +10,8 @@ packageNames = c(
 	"maptools",
 	"ellipse",
 	"openintro",
-	"tigerstats"
+	"tigerstats",
+	"animation"
 )
 
 for (pkgName in packageNames) {

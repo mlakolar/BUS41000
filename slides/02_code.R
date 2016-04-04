@@ -115,37 +115,77 @@ lines(x=c(0, 2200), y=c(yhat, yhat), col="blue", lty=2)
 # download data to the current working folder
 download.file("https://raw.githubusercontent.com/mlakolar/BUS41000/master/data/shopping.csv", destfile="shopping.csv")
 
-shopping_df = read.csv("shopping.csv")
+(shopping_df = read.csv("shopping.csv", row.names=1))
 
+# plot data using first two columns
+plot(x=shopping_df[,1], y=shopping_df[,2], main="Shopping attitudes",
+     xlab="Shopping is fun", ylab="Shopping is bad for your budget")
 
+# setting the seed will allow us to reproduce results
+# otherwise the result will change every time
+set.seed(1)                
+# cluster into three groups
+grpShopper = kmeans(shopping_df, centers=3, nstart=100)
+
+plot(x=shopping_df[,1], y=shopping_df[,2], main="Three clusters",
+     col=grpShopper$cluster+1, 
+     xlab="Shopping is fun", ylab="Shopping is bad for your budget")
+points(x=grpShopper$centers[,1], y=grpShopper$centers[,2], col=c(2,3,4), pch=3)
+
+# investigate centers
+t( grpShopper$centers )
+
+# visualize kmeans
+library(animation)
+
+## set larger 'interval' if the speed is too fast
+oopt = ani.options(interval = 2)
+kmeans.ani(shopping_df, centers=3)
 
 
 ############################### 
 #   European Protein Consumption
 ###############################
 
-# *** European Protein Consumption, in grams/person-day *** 
+# European Protein Consumption, in grams/person-day 
+
+library(maptools)
 
 download.file("https://raw.githubusercontent.com/mlakolar/BUS41000/master/data/protein.csv", destfile="protein.csv")
 
 food_df = read.csv("protein.csv", row.names=1) # 1st column is country name
 # scale the data so that every column has sample mean equal to zero and variance equal to 1
-food_scaled = scale(food)  
+food_scaled = scale(food_df)  
+
+plot(food_scaled[,"RedMeat"], food_scaled[,"WhiteMeat"], xlim=c(-2,2.75), 
+     type="n", xlab="Red Meat", ylab="White Meat")
+pointLabel(food_scaled[,"RedMeat"], food_scaled[,"WhiteMeat"],  
+           labels=rownames(food_scaled))
 
 ## first, consider just Red and White meat clusters
-(grpMeat <- kmeans(xfood[,c("WhiteMeat","RedMeat")], centers=3, nstart=10))
+grpMeat <- kmeans(food_scaled[,c("WhiteMeat","RedMeat")], centers=3, nstart=100)
+grpMeat
 
-plot(xfood[,"RedMeat"], xfood[,"WhiteMeat"], xlim=c(-2,2.75), 
-     type="n", xlab="Red Meat", ylab="White Meat")
-text(xfood[,"RedMeat"], xfood[,"WhiteMeat"], labels=rownames(food), 
-     col=rainbow(3)[grpMeat$cluster])
+plot(food_scaled[,"RedMeat"], food_scaled[,"WhiteMeat"], xlim=c(-2,2.75), 
+     type="n", xlab="Red Meat", ylab="White Meat",
+     main="3-means clustering on Red vs White meat consumption")
+pointLabel(food_scaled[,"RedMeat"], food_scaled[,"WhiteMeat"],
+           labels=rownames(food_scaled), col=grpMeat$cluster+1)
+
+# which contries belong to which cluster
+rownames(food_df)[grpMeat$cluster==1]
+rownames(food_df)[grpMeat$cluster==2]
+rownames(food_df)[grpMeat$cluster==3]
 
 ## same plot, but now with clustering on all protein groups
-grpProtein <- kmeans(xfood, centers=7, nstart=50) ## change the number of centers to see what happens.
+grpProtein <- kmeans(food_scaled, centers=7, nstart=100) ## change the number of centers to see what happens.
 grpProtein
 
-plot(xfood[,"RedMeat"], xfood[,"WhiteMeat"], xlim=c(-2,2.75), 
-     type="n", xlab="Red Meat", ylab="White Meat")
-text(xfood[,"RedMeat"], xfood[,"WhiteMeat"], labels=rownames(food), 
-     col=rainbow(7)[grpProtein$cluster]) ## col is all that differs from first plot
+plot(food_scaled[,"RedMeat"], food_scaled[,"WhiteMeat"], xlim=c(-2,2.75), 
+     type="n", xlab="Red Meat", ylab="White Meat",
+     main="7-means clustering on all nine protein types")
+text(food_scaled[,"RedMeat"], food_scaled[,"WhiteMeat"], labels=rownames(food_scaled), 
+     col=grpMeat$cluster+1) ## col is all that differs from first plot
+
+
 
