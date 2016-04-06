@@ -92,7 +92,7 @@ Scatter plot of the two variables:
 plot(x=countryReturn_df$Japan, y=countryReturn_df$Canada, 
      type="p", col="black",                                
      cex = 0.5,                                  # controls size of points
-     xlab="Canadian returns", ylab="Japanese returns", main = "Japanese vs Canadian returns")
+     xlab="Japanese returns", ylab="Canadian returns", main = "Japanese vs Canadian returns")
 ```
 
 The covariance and correlation between the two series can be computed by:
