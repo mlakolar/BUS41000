@@ -20,7 +20,7 @@ Review session:
 [R Markdown](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw01_starter.pdf)     
 Homework:
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imfe2fpjwhw7fk),
-[Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imfe2fso2fb7fp) ---
+[Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imoxy3azb1b3s4) ---
 Due by 5pm on Friday, April 8th
 
 
