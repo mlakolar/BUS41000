@@ -64,12 +64,12 @@ hist(countryReturn_df$Canada,
 
 We can also see some temporal trend via plotting the time series:
 ```{r}
-plot(x=as.Date(paste0(countryReturn_df$Date, "-01"), format = "%m/%d/%Y"), 
+plot(x=as.Date(countryReturn_df$Date, format = "%m/%d/%Y"), 
      y=countryReturn_df$Canada, type="l", col="blue", 
      xlab="", ylab="Canadian returns", main = "")
 abline(h=0)
 
-plot(x=as.Date(paste0(countryReturn_df$Date, "-01"), format = "%m/%d/%Y"), 
+plot(x=as.Date(countryReturn_df$Date, format = "%m/%d/%Y"), 
      y=countryReturn_df$Japan, type="l", col="blue", 
      xlab="", ylab="Japanese returns", main = "")
 abline(h=0)
