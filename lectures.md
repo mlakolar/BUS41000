@@ -6,8 +6,12 @@ permalink: /lectures/
 
 **Week 2**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/02_lecture.pdf),
-[R](https://github.com/mlakolar/BUS41000/raw/master/slides/02_code.R)
-
+[R](https://github.com/mlakolar/BUS41000/raw/master/slides/02_code.R),
+[Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/02_summary.pdf)    
+Homework:
+[Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims2q2fjx9s21u),
+[Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims40dtpstp609) ---
+Due by 5pm on Friday, April 15th
 
 
 **Week 1**: [Course Overview](https://github.com/mlakolar/BUS41000/raw/master/slides/01_courseOverview.pdf),
