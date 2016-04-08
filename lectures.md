@@ -48,3 +48,7 @@ realGDPgrowth: [data](https://github.com/mlakolar/BUS41000/raw/master/data/realG
 scotch: [data](https://github.com/mlakolar/BUS41000/raw/master/data/scotch.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/scotch.R)  
 shopping: [data](https://github.com/mlakolar/BUS41000/raw/master/data/shopping.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/shopping.R)  
 studenthw: [data](https://github.com/mlakolar/BUS41000/raw/master/data/studenthw.csv)  
+tabloid: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tabloid.csv)  
+tabloid_test: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tabloid_test.csv)  
+Wine_OfferInformation: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_OfferInformation.csv)  
+Wine_Transactions: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_Transactions.csv)  
