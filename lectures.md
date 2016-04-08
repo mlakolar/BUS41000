@@ -10,7 +10,7 @@ permalink: /lectures/
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/02_summary.pdf)    
 Homework:
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims2q2fjx9s21u),
-[Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims40dtpstp609) ---
+[Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims7qrgouya5v0) ---
 Due by 5pm on Friday, April 15th
 
 
