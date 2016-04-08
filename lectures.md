@@ -8,6 +8,10 @@ permalink: /lectures/
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/02_lecture.pdf),
 [R](https://github.com/mlakolar/BUS41000/raw/master/slides/02_code.R),
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/02_summary.pdf)    
+Review session:
+[Video](),
+[Rmd](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw02_starter.Rmd),
+[PDF](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw02_starter.pdf)   
 Homework:
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims2q2fjx9s21u),
 [Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims7qrgouya5v0) ---
