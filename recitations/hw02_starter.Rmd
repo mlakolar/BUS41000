@@ -1,0 +1,224 @@
+---
+title: "Homework 2 Starter Code"
+author: "Richard Chen"
+date: "April 8, 2016"
+output: pdf_document
+---
+
+# Note
+This pdf is produced by R Markdown. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. One way to produce nice-looking reports for your homework assignments using R Markdown, you need to install the package \texttt{knitr} <http://yihui.name/knitr/>. This document is prepared by R Markdown which is built on the \texttt{knitr} package aforementioned.
+
+For any R function which you feel confused about, please utilize the help function in R for detailed instructions. For example, function \texttt{cor()} help use to compute correlation (matrices), if you would like to know the details of its usage, input the R command \texttt{help(cor)}.
+
+# Additional note:
+
+1. In the case  where you have installed some package, for example \texttt{knitr}, and relaunch R and need to use some functionalities of the R package , you need to run the command \texttt{library(knitr)} before you use the functionalities of the corresponding package. If you never installed the package before, you need to run \texttt{install.packages("knitr")}, or click the "Packages" button on the top of the right lower window in the R Studio interface.
+
+2. Do not forget to set your working directory at the begining.
+
+
+# Example R Code for Question 1
+
+## a
+Download and read the data
+```{r}
+# download data to the current working folder
+download.file("https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns2.csv",
+              destfile="CountryMonthlyReturns2.csv")
+# assign the data to a variable
+countryReturn_df = read.csv("CountryMonthlyReturns2.csv")
+```
+
+Construct the returns of the equi-weighted portfolio:
+```{r}
+port_df = countryReturn_df[,c("Canada", "Japan")]
+port_df$port1 = 0.5*port_df$Canada + 0.5*port_df$Japan
+head(port_df)
+```
+then compute the mean and standard deviation of the return series
+```{r}
+mean(port_df$port1); sd(port_df$port1)
+```
+
+## c
+When the weight for the Canada is 25% and 75% respectively,
+```{r}
+port_df$port2 = 0.25*port_df$Canada + 0.75*port_df$Japan
+port_df$port3 = 0.75*port_df$Canada + 0.25*port_df$Japan
+
+mcr = sapply(port_df, mean)            # compute mean for each column
+sdcr = sapply(port_df, sd)             # compute standard deviation for each column  
+```
+
+Now make the standard deviation-mean scatter plot:
+```{r}
+plot(sdcr, mcr, type="p", main="Scatter for portfolios", xlab = "std. dev.", ylab = "mean", cex=0.7)
+# pointLabel(sdcr, mcr, labels=names(mcr), cex= 1)
+```
+
+## d. efficient frontier
+```{r}
+weights = seq(0,1,0.01)
+m = weights*mean(port_df$Canada)+(1-weights)*mean(port_df$Japan)
+s = sqrt(weights^2*var(port_df$Canada)+(1-weights)^2*var(port_df$Japan)
+               +2*weights*(1-weights)*cov(port_df$Canada,port_df$Japan))
+plot(s, m, type="b", col="blue", cex = 0.2,
+     xlab="std. dev", ylab="mean", main="Porfolio Frontier")
+lines(s,m,type="l", col="blue")
+```
+
+
+# Code for Question 3
+Download and read the data (reminder: we saw this dataset in lecture01: see 01_core.R )
+```{r}
+# download data to the current working folder
+download.file("https://github.com/mlakolar/BUS41000/raw/master/data/bank.csv",
+              destfile="bank.csv")
+# assign the data to a variable
+bank = read.csv("bank.csv")
+int = bank$InterarrivalTime
+```
+
+
+# Sample Code for Question 4
+Download and read the data
+```{r}
+# download data to the current working folder
+download.file("https://github.com/mlakolar/BUS41000/raw/master/data/studenthw.csv",
+              destfile="studenthw.csv")
+# assign the data to a variable
+studenthw = read.csv("studenthw.csv")
+```
+
+## b
+Scatter plot of heights and weights:
+```{r}
+head(studenthw)
+plot(studenthw$height, studenthw$weight, pch=20,
+     xlab = "students' heights (inches)", ylab = "students' weights (pounds)", main = "")
+```
+
+## e
+Scatter plot of heights in feet and heights in inches
+```{r}
+height.inch = studenthw$height
+height.foot = studenthw$height/12
+plot(height.foot, height.inch, pch=20,
+     xlab = "heights in feet", ylab = "heights in inches", main = "")
+```
+
+
+# Question 5. First Stab at Linear Regression
+Download and read the data
+```{r}
+# download data to the current working folder
+download.file("https://github.com/mlakolar/BUS41000/raw/master/data/housesp1.csv",
+              destfile="housesp1.csv")
+# assign the data to a variable
+homep_df = read.csv("housesp1.csv")
+```
+
+## b. linear coefficients by R
+The R output about the linear regression estimates is:
+```{r}
+# creat scatter plot
+plot(homep_df$size, homep_df$price, col = "blue", xlab = "Size (sq. feet)", ylab = "Price")
+
+# add a regression linea
+reg = lm(price~size, data = homep_df)
+abline(reg, lw = 2, col = "red")
+
+# summary of linear regression
+summary(reg)
+```
+```{r}
+hist(homep_df$price, breaks=20, 
+     main="Histogram of house prices", xlab="Price", ylab="Frequency")
+```
+
+## d. prediction baesd on linear regression
+```{r}
+# download data to the current working folder
+download.file("https://github.com/mlakolar/BUS41000/raw/master/data/housesp2.csv",
+              destfile="housesp2.csv")
+# assign the data to a variable
+homep2_df = read.csv("housesp2.csv")
+
+# the new data only contains column sizenew
+head(homep_df)
+
+# rename the column, it needs to be the same name as in homep_df
+colnames(homep2_df) = c("size")
+```
+Predict prices for new houses
+```{r}
+yhat = predict(reg, homep2_df)
+head(yhat)
+```
+
+# Question 6. Wine Offers
+
+Download data to the current working folder
+```{r}
+download.file("https://github.com/mlakolar/BUS41000/raw/master/data/Wine_OfferInformation.csv", 
+              destfile="Wine_OfferInformation.csv")
+download.file("https://github.com/mlakolar/BUS41000/raw/master/data/Wine_Transactions.csv", 
+              destfile="Wine_Transactions.csv")
+
+# load data into R
+offers_df       = read.csv("Wine_OfferInformation.csv", row.names = 1)
+transactions_df = read.csv("Wine_Transactions.csv")
+```
+
+## a. cluster analysis
+```{r}
+# initializa an empty table where rows correspond to customers and columns correspond to offers
+customer_by_offer = matrix(0, length(unique(transactions_df[,1])), nrow(offers_df))      
+rownames(customer_by_offer) = levels(transactions_df[,1])
+colnames(customer_by_offer) = 1:nrow(offers_df)
+
+# put transactions into the table
+for (i in 1:nrow(transactions_df)) {
+  customer_by_offer[ transactions_df[i,1], transactions_df[i,2] ] = 1  
+}
+
+# customer_by_offer now contains information on which offers did each customer get
+# for example, here are offers by "Fisher" or "Smith"
+customer_by_offer[ "Fisher", ] 
+customer_by_offer[ "Smith", ] 
+
+# find 4 clusters
+set.seed(1)       # for reproductivity
+grpCustomers = kmeans(customer_by_offer, centers = 4, nstart = 1000)
+
+# take a look at cluster means and try to summarize different groups
+grpCustomers
+```
+
+## b. Wines favored by customers in each cluster
+Let check what offers did members of each cluster buy -- rank the offers from most popular of offer to least popular offer within each cluster.
+```{r}
+# find members in each cluster
+cluster.1 = rownames(customer_by_offer)[grpCustomers$cluster==1]
+cluster.2 = rownames(customer_by_offer)[grpCustomers$cluster==2]
+cluster.3 = rownames(customer_by_offer)[grpCustomers$cluster==3]
+cluster.4 = rownames(customer_by_offer)[grpCustomers$cluster==4]
+
+# extract the information of the offers in each cluster
+cluster_by_offer = matrix(0,4,nrow(offers_df))
+rownames(cluster_by_offer) = 1:4
+colnames(cluster_by_offer) = 1:nrow(offers_df)
+
+for (i in 1:nrow(offers_df)){
+  cluster_by_offer[1,i] = sum(customer_by_offer[cluster.1,i])
+  cluster_by_offer[2,i] = sum(customer_by_offer[cluster.2,i])
+  cluster_by_offer[3,i] = sum(customer_by_offer[cluster.3,i])
+  cluster_by_offer[4,i] = sum(customer_by_offer[cluster.4,i])
+}
+
+# Rank the offers by their numbers in each cluster
+sort(cluster_by_offer[1,], decreasing = TRUE)
+sort(cluster_by_offer[2,], decreasing = TRUE)
+sort(cluster_by_offer[3,], decreasing = TRUE)
+sort(cluster_by_offer[4,], decreasing = TRUE)
+```
