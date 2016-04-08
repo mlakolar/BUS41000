@@ -27,7 +27,9 @@ Homework:
 [Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imoxy3azb1b3s4) ---
 Due by 5pm on Friday, April 8th
 
+### Practice problems
 
+[True/False Questions](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims6ocnsyny58y)
 
 ### Data
 
