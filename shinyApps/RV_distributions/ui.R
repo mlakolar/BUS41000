@@ -25,12 +25,6 @@ shinyUI(fluidPage(theme=shinytheme("united"),
 				)
 			)
 		),
-		column(8,
-			tabsetPanel(
-				tabPanel("Plot",plotOutput("plot", width="100%", height="auto")),
-				tabPanel("Summary",verbatimTextOutput("summary")),
-				id="tsp"
-			)
-		)
+		column(8, plotOutput("plot", width="100%", height="auto"), plotOutput("plotts", width="100%", height="auto"))
 	)
 ))

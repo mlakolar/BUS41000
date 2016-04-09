@@ -192,6 +192,7 @@ shinyServer(function(input, output, session){
 				# if(length(input$density)) if(input$density & length(input$bw)) lines(density(d,adjust=input$bw),lwd=2)
 			    if(length(input$density_pdf) & input$density_pdf) lines(x=pdfData[,"x"], y=pdfData[,"y"], lwd=2)
 			}
+			
 		}
 	}
 	
@@ -200,6 +201,19 @@ shinyServer(function(input, output, session){
 	},
 	height=function(){ w <- session$clientData$output_plot_width; round((0.75*w)) }, width="auto"
 	)
+
+	output$plotts <- renderPlot({
+	    if(length(input$dist)){
+	        par(mar=c(4,4,10,1))
+	        d=dat()[[1]]
+	        plot(x=1:input$n,y=d, xlab="Index", ylab="Observations",
+	             cex.main=1.5,cex.axis=1.3,cex.lab=1.3,
+	             cex=0.7, type="p", col="blue")
+	    }
+	},
+	height=function(){ w <- session$clientData$output_plot_width; round((0.75*w)) }, width="auto"
+	)
+	
 	
 	output$dlCurPlot <- downloadHandler(
 		filename = 'curPlot.pdf',
@@ -216,9 +230,5 @@ shinyServer(function(input, output, session){
 			write.csv(data.frame(x=dat()[[1]]), file)
 		}
 	)
-	
-	output$summary <- renderPrint({
-		summary(dat()[[1]])
-	})
 
 })
