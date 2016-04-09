@@ -40,6 +40,8 @@ where `<nameOfApplication>` should be substituted by one of the names below.
   * [twoAssetPortfolio](#twoassetportfolio)
 	* [studentHeightWeight](#studentheightweight)
 
+* [Lecture 05](#lecture-05)
+	* [RV_distributions](#rv_distributions)
 
 ## Lecture 01
 
@@ -76,5 +78,14 @@ DEMO: [link](https://mlakolar.shinyapps.io/studentHeightWeight/)
 
 ### twoAssetPortfolio
 
-Illustrating effect of correlation on the returns of a portfolio   
+Illustrating effect of correlation on the returns of a portfolio.   
 DEMO: [link](https://mlakolar.shinyapps.io/twoAssetPortfolio/)
+
+
+## Lecture 05
+
+### RV_distributions
+
+Draws random numbers from a probability distribution.
+Plots a histogram of the sample together with a probability density function.      
+DEMO: [link](https://mlakolar.shinyapps.io/RV_distributions/)
