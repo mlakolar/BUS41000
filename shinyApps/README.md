@@ -38,7 +38,7 @@ where `<nameOfApplication>` should be substituted by one of the names below.
 
 * [Lecture 02](#lecture-02)
   * [twoAssetPortfolio](#twoassetportfolio)
-	* [studentHeightWeight](#studentheightweight)
+  * [studentHeightWeight](#studentheightweight)
 
 * [Lecture 04](#lecture-04)
 	* [RV_distributions](#rv_distributions)
