@@ -40,8 +40,9 @@ where `<nameOfApplication>` should be substituted by one of the names below.
   * [twoAssetPortfolio](#twoassetportfolio)
 	* [studentHeightWeight](#studentheightweight)
 
-* [Lecture 05](#lecture-05)
+* [Lecture 04](#lecture-04)
 	* [RV_distributions](#rv_distributions)
+	* [Distribution calculator](#distribution_calculator)
 
 ## Lecture 01
 
@@ -82,10 +83,16 @@ Illustrating effect of correlation on the returns of a portfolio.
 DEMO: [link](https://mlakolar.shinyapps.io/twoAssetPortfolio/)
 
 
-## Lecture 05
+## Lecture 04
 
 ### RV_distributions
 
 Draws random numbers from a probability distribution.
 Plots a histogram of the sample together with a probability density function.      
 DEMO: [link](https://mlakolar.shinyapps.io/RV_distributions/)
+
+### Distribution Calculator
+
+Illustrates concept of PDF and CDF.  
+DEMO: [link](https://mlakolar.shinyapps.io/distributionCalculator/)
+
