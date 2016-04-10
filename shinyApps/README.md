@@ -42,7 +42,7 @@ where `<nameOfApplication>` should be substituted by one of the names below.
 
 * [Lecture 04](#lecture-04)
 	* [RV_distributions](#rv_distributions)
-	* [Distribution calculator](#distribution_calculator)
+	* [DistributionCalculator](#distributioncalculator)
 
 ## Lecture 01
 
@@ -91,7 +91,7 @@ Draws random numbers from a probability distribution.
 Plots a histogram of the sample together with a probability density function.      
 DEMO: [link](https://mlakolar.shinyapps.io/RV_distributions/)
 
-### Distribution Calculator
+### DistributionCalculator
 
 Illustrates concept of PDF and CDF.  
 DEMO: [link](https://mlakolar.shinyapps.io/distributionCalculator/)
