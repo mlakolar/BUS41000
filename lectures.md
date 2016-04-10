@@ -10,6 +10,7 @@ permalink: /lectures/
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/02_summary.pdf)    
 Review session:
 [Video](),
+[R](https://github.com/mlakolar/BUS41000/raw/master/recitations/02_recitation.R),
 [Rmd](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw02_starter.Rmd),
 [PDF](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw02_starter.pdf)   
 Homework:
