@@ -19,7 +19,7 @@ Review session:
 [Rmd](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw02_starter.Rmd),
 [PDF](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw02_starter.pdf)   
 Homework:
-[Assignment](https://s3.amazonaws.com/piazza-resources/ihbf4oo8gc36od/imw8bukhagu4wd/hw02.pdf?AWSAccessKeyId=AKIAIEDNRLJ4AZKBW6HA&Expires=1460403879&Signature=0cZu6ZNZcIiHB4P%2BgA2Pb0Qw0BI%3D),
+[Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imw8bukhagu4wd),
 [Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims7qrgouya5v0) ---
 Due by 5pm on Friday, April 15th
 
