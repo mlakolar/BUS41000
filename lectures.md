@@ -14,7 +14,7 @@ permalink: /lectures/
 [R](https://github.com/mlakolar/BUS41000/raw/master/slides/02_code.R),
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/02_summary.pdf)    
 Review session:
-[Video](),
+[Video](https://media.chicagobooth.edu/Mediasite6/Play/a4de25b0bb1944bd81873c14e2b3511b1d),
 [R](https://github.com/mlakolar/BUS41000/raw/master/recitations/02_recitation.R),
 [Rmd](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw02_starter.Rmd),
 [PDF](https://github.com/mlakolar/BUS41000/raw/master/recitations/hw02_starter.pdf)   
