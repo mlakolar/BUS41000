@@ -4,6 +4,11 @@ title: Lectures
 permalink: /lectures/
 ---
 
+**Week 3**:
+[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/03_lecture.pdf),
+[Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/03_summary.pdf)    
+
+
 **Week 2**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/02_lecture.pdf),
 [R](https://github.com/mlakolar/BUS41000/raw/master/slides/02_code.R),
