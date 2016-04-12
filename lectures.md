@@ -39,7 +39,10 @@ Due by 5pm on Friday, April 8th
 
 ### Practice problems
 
-[True/False Questions](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims6ocnsyny58y)
+[True/False](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/ims6ocnsyny58y)   
+[Descriptive Statistics](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imxgb5ttlep7nx)  
+[Probability](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imxgb7g1je14ze)  
+[Bayes Theorem](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/imxgdiixymr5qf)
 
 ### Data
 
