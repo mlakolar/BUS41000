@@ -6,8 +6,11 @@ permalink: /lectures/
 
 **Week 3**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/03_lecture.pdf),
+[R](https://github.com/mlakolar/BUS41000/raw/master/slides/03_code.R),
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/03_summary.pdf)    
-
+Homework:
+[Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/in0v9roflv028d) ---
+Due by 5pm on Friday, April 22th
 
 **Week 2**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/02_lecture.pdf),
@@ -51,12 +54,14 @@ BeerConsumptionMBA: [data](https://github.com/mlakolar/BUS41000/raw/master/data/
 bostonMarathon: [data](https://github.com/mlakolar/BUS41000/raw/master/data/bostonMarathon.csv)  
 CountryMonthlyReturns2: [data](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns2.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns2.R)  
 CountryMonthlyReturns: [data](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns.R)  
+fraud: [data](https://github.com/mlakolar/BUS41000/raw/master/data/fraud.csv)  
 GSPC: [data](https://github.com/mlakolar/BUS41000/raw/master/data/GSPC.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/GSPC.R)  
 heightweight: [data](https://github.com/mlakolar/BUS41000/raw/master/data/heightweight.csv)  
 housesp1: [data](https://github.com/mlakolar/BUS41000/raw/master/data/housesp1.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/housesp1.R)  
 housesp2: [data](https://github.com/mlakolar/BUS41000/raw/master/data/housesp2.csv)  
 marketing: [data](https://github.com/mlakolar/BUS41000/raw/master/data/marketing.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/marketing.R)  
 mutualFundReturn: [data](https://github.com/mlakolar/BUS41000/raw/master/data/mutualFundReturn.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/mutualFundReturn.R)  
+nba: [data](https://github.com/mlakolar/BUS41000/raw/master/data/nba.csv)  
 oldfaithful: [data](https://github.com/mlakolar/BUS41000/raw/master/data/oldfaithful.csv)  
 protein: [data](https://github.com/mlakolar/BUS41000/raw/master/data/protein.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/protein.R)  
 realGDPgrowth: [data](https://github.com/mlakolar/BUS41000/raw/master/data/realGDPgrowth.csv)  
@@ -66,4 +71,4 @@ studenthw: [data](https://github.com/mlakolar/BUS41000/raw/master/data/studenthw
 tabloid: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tabloid.csv)  
 tabloid_test: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tabloid_test.csv)  
 Wine_OfferInformation: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_OfferInformation.csv)  
-Wine_Transactions: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_Transactions.csv)  
+Wine_Transactions: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_Transactions.csv)
