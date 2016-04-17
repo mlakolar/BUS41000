@@ -10,7 +10,7 @@ permalink: /lectures/
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/03_summary.pdf)    
 Review session:
 [Video]() (will be added on Monday),
-[Problems](https://github.com/mlakolar/BUS41000/raw/master/recitations/03_recitation.pdf)   
+[Problems with solutions](https://github.com/mlakolar/BUS41000/raw/master/recitations/03_recitation.pdf)   
 Homework:
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/in0v9roflv028d) ---
 Due by 5pm on Friday, April 22th
