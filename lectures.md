@@ -9,7 +9,7 @@ permalink: /lectures/
 [R](https://github.com/mlakolar/BUS41000/raw/master/slides/03_code.R),
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/03_summary.pdf)    
 Review session:
-[Video]() (will be added on Monday),
+[Video](https://media.chicagobooth.edu/Mediasite6/Play/778464a5a7034ab5a4c2dc06b9662cb31d),
 [Problems with solutions](https://github.com/mlakolar/BUS41000/raw/master/recitations/03_recitation.pdf)   
 Homework:
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/in0v9roflv028d) ---
