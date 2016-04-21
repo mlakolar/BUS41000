@@ -143,70 +143,23 @@ nb_df_test = nb_df[-nb_sampling_vector,]
 scores_train = scores[nb_sampling_vector]
 scores_test = scores[-nb_sampling_vector]
 
+## Part 2
+download.file("https://github.com/mlakolar/BUS41000/raw/master/files/NaiveBayes/naiveBayes.Rdata", 
+              destfile="naiveBayes.Rdata")
+load("naiveBayes.Rdata")
+
 library(e1071)
 nb_model = naiveBayes(nb_df_train, scores_train)
 
 # compute training error
-if (file.exists("nb_train_predictions.RData")) {
-    load("nb_train_predictions.RData")
-} else {
-    nb_train_predictions = predict(nb_model, nb_df_train) 
-    save(nb_train_predictions, file = "nb_train_predictions.RData")
-}
+nb_train_predictions = predict(nb_model, nb_df_train) 
 mean(nb_train_predictions == scores_train)
 table(actual = scores_train, predictions = nb_train_predictions)
 
 # compute test error
-if (file.exists("nb_test_predictions.RData")) {
-    load("nb_test_predictions.RData")
-} else {
-    nb_test_predictions = predict(nb_model, nb_df_test)
-    save(nb_test_predictions, file = "nb_test_predictions.RData")
-}
+nb_test_predictions = predict(nb_model, nb_df_test)
 mean(nb_test_predictions == scores_test)
 table(actual = scores_test, predictions = nb_test_predictions)
 
-# also perform stemming as a preprocessing step
-nb_all = tm_map(nb_all, stemDocument, language = "english")
-nb_dtm = DocumentTermMatrix(nb_all) 
-nb_dtm = removeSparseTerms(x=nb_dtm, sparse = 0.99)
-nb_dtm = weightBin(nb_dtm)
-nb_df = as.data.frame(as.matrix(nb_dtm))
-nb_df_train = nb_df[nb_sampling_vector,]
-nb_df_test = nb_df[-nb_sampling_vector,]
-
-# train model on stemmed corpora
-nb_model_stem = naiveBayes(nb_df_train, scores_train)
-if (file.exists("nb_test_predictions_stem.RData")) {
-    load("nb_test_predictions_stem.RData")
-} else {
-    nb_test_predictions_stem = predict(nb_model_stem, nb_df_test)
-    save(nb_test_predictions_stem, file = "nb_test_predictions_stem.RData")
-}
-mean(nb_test_predictions_stem == scores_test)
-table(actual = scores_test, predictions = nb_test_predictions_stem)
-
-# Note: Recompute the nb_dtm without stemming before running the next bit
-nb_all = c(nb_pos, nb_neg, recursive=T)
-nb_all = tm_map(nb_all, content_transformer(removeNumbers))
-nb_all = tm_map(nb_all, content_transformer(removePunctuation))
-nb_all = tm_map(nb_all, content_transformer(tolower))
-nb_all = tm_map(nb_all, content_transformer(removeWords), stopwords("english"))
-nb_all = tm_map(nb_all, content_transformer(stripWhitespace))
-nb_dtm = DocumentTermMatrix(nb_all) 
-nb_dtm = removeSparseTerms(x=nb_dtm, sparse = 0.99)
-nb_df = as.data.frame(as.matrix(nb_dtm))
-nb_df_train = nb_df[nb_sampling_vector,]
-nb_df_test = nb_df[-nb_sampling_vector,]
-
-nb_model_laplace = naiveBayes(nb_df_train, scores_train, laplace=10)
-if (file.exists("nb_test_predictions_laplace.RData")) {
-    load("nb_test_predictions_laplace.RData")
-} else {
-    nb_test_predictions_laplace = predict(nb_model_laplace, nb_df_test)
-    save(nb_test_predictions_laplace, file = "nb_test_predictions_laplace.RData")
-}
-mean(nb_test_predictions_laplace == scores_test)
-table(actual = scores_test, predictions = nb_test_predictions_laplace)
 
 
