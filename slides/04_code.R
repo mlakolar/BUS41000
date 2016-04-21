@@ -144,7 +144,9 @@ scores_train = scores[nb_sampling_vector]
 scores_test = scores[-nb_sampling_vector]
 
 ## Part 2
-
+download.file("https://github.com/mlakolar/BUS41000/raw/master/files/NaiveBayes/naiveBayes.Rdata", 
+              destfile="naiveBayes.Rdata")
+load("naiveBayes.Rdata")
 
 library(e1071)
 nb_model = naiveBayes(nb_df_train, scores_train)
