@@ -110,6 +110,7 @@ nb_all = tm_map(nb_all, content_transformer(removePunctuation))
 nb_all = tm_map(nb_all, content_transformer(tolower))
 nb_all = tm_map(nb_all, content_transformer(removeWords), stopwords("english"))
 nb_all = tm_map(nb_all, content_transformer(stripWhitespace))
+nb_all = tm_map(nb_all, stemDocument, language = "english")
 
 # create document term matrix
 nb_dtm = DocumentTermMatrix(nb_all)
@@ -118,7 +119,7 @@ nb_dtm
 
 # remove infrequent items
 # try repeating this with different sparsity
-nb_dtm = removeSparseTerms(x=nb_dtm, sparse = 0.99)
+nb_dtm = removeSparseTerms(x=nb_dtm, sparse = 0.98)
 dim(nb_dtm)
 nb_dtm
 
@@ -136,6 +137,9 @@ inspect( nb_dtm[1,terms] )
 
 # split into train and test
 nb_df = as.data.frame(as.matrix(nb_dtm))
+colNames = colnames(nb_df)
+nb_df[,colNames] = lapply(nb_df[,colNames], factor)
+
 set.seed(1)
 nb_sampling_vector = sample(25000, 20000)
 nb_df_train = nb_df[nb_sampling_vector,]
@@ -161,5 +165,8 @@ nb_test_predictions = predict(nb_model, nb_df_test)
 mean(nb_test_predictions == scores_test)
 table(actual = scores_test, predictions = nb_test_predictions)
 
-
+# find words appearing in positive and negative reviews 
+sorted_words = sort( as.data.frame( lapply(nb_model$tables, function (x) {x[2,2] / x[1,2]}) ) )
+rev(sorted_words)[1:20]    # positive words
+sorted_words[1:20]         # negative words
 
