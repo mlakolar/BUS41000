@@ -8,7 +8,8 @@ permalink: /lectures/
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/04_lecture.pdf),
 [R](https://github.com/mlakolar/BUS41000/raw/master/slides/04_code.R)   
 Review session:
-[Video]() (will be posted on Monday)   
+[Video]() (will be posted on Monday),
+[Problems](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/incavabe1dq2i6)   
 Homework:
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inbu71fj78d5zm) ---
 Due by 5pm on Friday, April 29th
