@@ -5,7 +5,8 @@ permalink: /lectures/
 ---
 
 **Week 4**:
-[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/04_lecture.pdf)  
+[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/04_lecture.pdf),
+[R](https://github.com/mlakolar/BUS41000/raw/master/slides/04_code.R)   
 Review session:
 [Video]() (will be posted on Monday)   
 Homework:
