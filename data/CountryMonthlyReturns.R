@@ -59,7 +59,7 @@ hist(countryReturn_df$canada, breaks = ceiling(numBin2),
 
 
 # illustrate empirical rule for canadian returns
-hist(countryReturn_df$canada, breaks = 20, 
+hist(countryReturn_df$canada, breaks = 15, 
      xlim = c(-0.12, 0.12), ylim=c(0,15),
      main="", xlab ="Returns", ylab="Frequency")
 mean_canada_return = mean(countryReturn_df$canada)
