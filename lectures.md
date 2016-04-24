@@ -4,12 +4,17 @@ title: Lectures
 permalink: /lectures/
 ---
 
+**Week 5**:
+
+
 **Week 4**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/04_lecture.pdf),
-[R](https://github.com/mlakolar/BUS41000/raw/master/slides/04_code.R)   
+[R](https://github.com/mlakolar/BUS41000/raw/master/slides/04_code.R),
+[Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/04_summary.pdf)  
 Review session:
 [Video]() (will be posted on Monday),
-[Problems](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/incavabe1dq2i6)   
+[Problems](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/incavabe1dq2i6),
+[Solutions](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inf8dhzld0x6fw)     
 Homework:
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inbu71fj78d5zm) ---
 Due by 5pm on Friday, April 29th
@@ -68,6 +73,7 @@ BeerConsumptionMBA: [data](https://github.com/mlakolar/BUS41000/raw/master/data/
 bostonMarathon: [data](https://github.com/mlakolar/BUS41000/raw/master/data/bostonMarathon.csv)  
 CountryMonthlyReturns2: [data](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns2.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns2.R)  
 CountryMonthlyReturns: [data](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/CountryMonthlyReturns.R)  
+DowJones: [data](https://github.com/mlakolar/BUS41000/raw/master/data/DowJones.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/DowJones.R)  
 fraud: [data](https://github.com/mlakolar/BUS41000/raw/master/data/fraud.csv)  
 GSPC: [data](https://github.com/mlakolar/BUS41000/raw/master/data/GSPC.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/GSPC.R)  
 heightweight: [data](https://github.com/mlakolar/BUS41000/raw/master/data/heightweight.csv)  
@@ -85,4 +91,4 @@ studenthw: [data](https://github.com/mlakolar/BUS41000/raw/master/data/studenthw
 tabloid: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tabloid.csv)  
 tabloid_test: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tabloid_test.csv)  
 Wine_OfferInformation: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_OfferInformation.csv)  
-Wine_Transactions: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_Transactions.csv)
+Wine_Transactions: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_Transactions.csv)  
