@@ -14,7 +14,8 @@ packageNames = c(
 	"animation",
 	"e1071",
 	"tm",
-	"SnowballC"
+	"SnowballC",
+	"BHH2"
 )
 
 for (pkgName in packageNames) {

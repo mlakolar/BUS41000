@@ -405,7 +405,7 @@ shinyServer(function(input, output)
         value = mu + 1.96 * sd
         min   = mu - 4 * sd
         max   = mu + 4 * sd
-        step  = find_normal_step(sd)
+        step  = 0.01
       }
       else if (input$dist == "rt")
       {
