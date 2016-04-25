@@ -44,6 +44,10 @@ where `<nameOfApplication>` should be substituted by one of the names below.
 	* [RV_distributions](#rv_distributions)
 	* [DistributionCalculator](#distributioncalculator)
 
+* [Lecture 06](#lecture-06)
+	* CLT proportions
+	* Confidence intervals
+
 ## Lecture 01
 
 ### simpleHistogram
@@ -95,4 +99,14 @@ DEMO: [link](https://mlakolar.shinyapps.io/RV_distributions/)
 
 Illustrates concept of PDF and CDF.  
 DEMO: [link](https://mlakolar.shinyapps.io/distributionCalculator/)
+
+## Lecture 06
+
+### CLT proportions
+
+DEMO: [link](https://mlakolar.shinyapps.io/CLT_prop/)
+
+### Confidence intervals
+
+DEMO: [link](http://faraway.neu.edu:8080/cinterval/)
 
