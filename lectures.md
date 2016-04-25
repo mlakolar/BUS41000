@@ -5,7 +5,7 @@ permalink: /lectures/
 ---
 
 **Week 5**:
-
+[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/05_lecture.pdf)
 
 **Week 4**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/04_lecture.pdf),
