@@ -152,6 +152,8 @@ download.file("https://github.com/mlakolar/BUS41000/raw/master/files/NaiveBayes/
               destfile="naiveBayes.Rdata")
 load("naiveBayes.Rdata")
 
+# add code to inspect each 
+
 library(e1071)
 nb_model = naiveBayes(nb_df_train, scores_train)
 
