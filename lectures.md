@@ -68,6 +68,7 @@ Due by 5pm on Friday, April 8th
 
 ### Data
 
+
 bank: [data](https://github.com/mlakolar/BUS41000/raw/master/data/bank.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/bank.R)  
 BeerConsumptionMBA: [data](https://github.com/mlakolar/BUS41000/raw/master/data/BeerConsumptionMBA.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/BeerConsumptionMBA.R)  
 bostonMarathon: [data](https://github.com/mlakolar/BUS41000/raw/master/data/bostonMarathon.csv)  
@@ -90,5 +91,6 @@ shopping: [data](https://github.com/mlakolar/BUS41000/raw/master/data/shopping.c
 studenthw: [data](https://github.com/mlakolar/BUS41000/raw/master/data/studenthw.csv)  
 tabloid: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tabloid.csv)  
 tabloid_test: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tabloid_test.csv)  
+tsdata: [data](https://github.com/mlakolar/BUS41000/raw/master/data/tsdata.csv)  
 Wine_OfferInformation: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_OfferInformation.csv)  
 Wine_Transactions: [data](https://github.com/mlakolar/BUS41000/raw/master/data/Wine_Transactions.csv)  
