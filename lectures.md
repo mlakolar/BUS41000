@@ -5,14 +5,17 @@ permalink: /lectures/
 ---
 
 **Week 5**:
-[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/05_lecture.pdf)
+[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/05_lecture.pdf)   
+Review session:   
+Homework:   
+
 
 **Week 4**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/04_lecture.pdf),
 [R](https://github.com/mlakolar/BUS41000/raw/master/slides/04_code.R),
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/04_summary.pdf)  
 Review session:
-[Video]() (will be posted on Monday),
+[Video](https://media.chicagobooth.edu/Mediasite6/Play/ea4aad7c9f624730b7822e38be48fb2f1d),   
 [Problems](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/incavabe1dq2i6),
 [Solutions](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inf8dhzld0x6fw)     
 Homework:
