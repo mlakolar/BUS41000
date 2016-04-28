@@ -71,7 +71,8 @@ Due by 5pm on Friday, April 8th
 
 ### Data
 
-
+accidents_test: [data](https://github.com/mlakolar/BUS41000/raw/master/data/accidents_test.csv)  
+accidents_train: [data](https://github.com/mlakolar/BUS41000/raw/master/data/accidents_train.csv)  
 bank: [data](https://github.com/mlakolar/BUS41000/raw/master/data/bank.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/bank.R)  
 BeerConsumptionMBA: [data](https://github.com/mlakolar/BUS41000/raw/master/data/BeerConsumptionMBA.csv), [R](https://github.com/mlakolar/BUS41000/raw/master/data/BeerConsumptionMBA.R)  
 bostonMarathon: [data](https://github.com/mlakolar/BUS41000/raw/master/data/bostonMarathon.csv)  
