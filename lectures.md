@@ -5,7 +5,8 @@ permalink: /lectures/
 ---
 
 **Week 5**:
-[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/05_lecture.pdf)   
+[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/05_lecture.pdf),
+[Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/05_summary.pdf)  
 Review session:
 [Video](https://media.chicagobooth.edu/Mediasite6/Play/095de2d7b16445ccbe16089a9451f6f61d),
 [Problems](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inmjszbkbrr55k)  
