@@ -152,10 +152,17 @@ download.file("https://github.com/mlakolar/BUS41000/raw/master/files/NaiveBayes/
               destfile="naiveBayes.Rdata")
 load("naiveBayes.Rdata")
 
-# add code to inspect each 
+# inspect first review
+inspect(nb_dtm[1,]) 
+terms = which( inspect(nb_dtm[100,]) != 0 ) # find terms in review 1
+inspect( nb_dtm[100,terms] )
 
 library(e1071)
 nb_model = naiveBayes(nb_df_train, scores_train)
+
+# inspect model
+nb_model$tables["great"]
+nb_model$tables["terribl"]
 
 # compute training error
 nb_train_predictions = predict(nb_model, nb_df_train) 
