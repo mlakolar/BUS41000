@@ -8,7 +8,7 @@ permalink: /lectures/
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/05_lecture.pdf)   
 Review session:
 [Video](https://media.chicagobooth.edu/Mediasite6/Play/095de2d7b16445ccbe16089a9451f6f61d),
-[Problems]()  
+[Problems](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inmjszbkbrr55k)  
 Homework:
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inlwg9a0q0a1w2) 
 [Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inlwgtv81bz281) --- 
