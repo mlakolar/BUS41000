@@ -10,7 +10,7 @@ Review session:
 [Video](https://media.chicagobooth.edu/Mediasite6/Play/095de2d7b16445ccbe16089a9451f6f61d),
 [Problems](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inmjszbkbrr55k)  
 Homework:
-[Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inlwg9a0q0a1w2) 
+[Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inlwg9a0q0a1w2), 
 [Starter Script](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inlwgtv81bz281) --- 
 Due by 5pm on Friday, May 6th
 
