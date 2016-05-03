@@ -4,6 +4,15 @@ title: Lectures
 permalink: /lectures/
 ---
 
+**Week 6**:
+[Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/06_lecture.pdf),
+[Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/06_summary.pdf)  
+Review session:
+[Video](),
+[Problems]()  
+Homework:  
+
+
 **Week 5**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/05_lecture.pdf),
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/05_summary.pdf)  
