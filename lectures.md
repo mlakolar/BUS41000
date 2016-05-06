@@ -11,7 +11,8 @@ Review session:
 [Video](),
 [Problems]()  
 Homework:  
-
+[Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/invzveb921e61k) --- 
+Due by 5pm on Friday, May 20th
 
 **Week 5**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/05_lecture.pdf),
