@@ -10,7 +10,7 @@ permalink: /lectures/
 Review session:
 [Video](),
 [Problems]()  
-Homework:  
+Homework: 
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/invzveb921e61k) --- 
 Due by 5pm on Friday, May 20th
 
