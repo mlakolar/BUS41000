@@ -8,8 +8,8 @@ permalink: /lectures/
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/06_lecture.pdf),
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/06_summary.pdf)  
 Review session:
-[Video](),
-[Problems]()  
+[Video](https://media.chicagobooth.edu/Mediasite6/Play/bf643153e0e24c598ba2f2863aaaebd71d),
+[Notes](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/inwmg9oxz4l2s3)  
 Homework: 
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/invzveb921e61k) --- 
 Due by 5pm on Friday, May 20th
