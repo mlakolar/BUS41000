@@ -4,6 +4,12 @@ title: Lectures
 permalink: /lectures/
 ---
 
+**Week 8**:
+[Hypothesis Testing](https://github.com/mlakolar/BUS41000/raw/master/slides/08_lecture_hypothesisTesting.pdf)   
+Review session:  
+Homework:   
+
+
 **Week 6**:
 [Slides](https://github.com/mlakolar/BUS41000/raw/master/slides/06_lecture.pdf),
 [Summary](https://github.com/mlakolar/BUS41000/raw/master/slides/06_summary.pdf)  
