@@ -5,7 +5,8 @@ permalink: /lectures/
 ---
 
 **Week 8**:
-[Hypothesis Testing](https://github.com/mlakolar/BUS41000/raw/master/slides/08_lecture_hypothesisTesting.pdf)   
+[Hypothesis Testing](https://github.com/mlakolar/BUS41000/raw/master/slides/08_lecture_hypothesisTesting.pdf),
+[Simple Linear Regression](https://github.com/mlakolar/BUS41000/raw/master/slides/08_lecture_slr.pdf)   
 Review session:  
 Homework:   
 
