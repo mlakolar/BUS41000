@@ -8,7 +8,9 @@ permalink: /lectures/
 [Hypothesis Testing](https://github.com/mlakolar/BUS41000/raw/master/slides/08_lecture_hypothesisTesting.pdf),
 [Simple Linear Regression](https://github.com/mlakolar/BUS41000/raw/master/slides/08_lecture_slr.pdf)   
 Review session:  
-Homework:   
+Homework: 
+[Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/iog2q70ak02t4) --- 
+Due by 5pm on Friday, May 27th
 
 
 **Week 6**:
