@@ -10,7 +10,7 @@ permalink: /lectures/
 [Simple Linear Regression](https://github.com/mlakolar/BUS41000/raw/master/slides/08_lecture_slr.pdf)   
 Example: [Wage Data](https://github.com/mlakolar/BUS41000/raw/master/slides/08_ex_wageData.pdf)  
 Review session:
-Video  
+[Video](https://media.chicagobooth.edu/Mediasite6/Play/3964f558091643749e30ce82a0467cc51d)      
 Homework: 
 [Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/iog2q70ak02t4) --- 
 Due by 5pm on Friday, May 27th
