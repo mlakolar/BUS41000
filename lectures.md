@@ -4,7 +4,9 @@ title: Lectures
 permalink: /lectures/
 ---
 
-**Week 9**: [SLR Inference](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_slr_inference.pdf)   
+**Week 9**: 
+[SLR Inference](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_slr_inference.pdf),
+[MLR](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_mlr.pdf)   
 
 
 **Week 8**:
