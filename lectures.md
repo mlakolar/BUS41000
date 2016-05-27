@@ -10,7 +10,7 @@ permalink: /lectures/
 Review session:
 [Video](https://media.chicagobooth.edu/Mediasite6/Play/ab79a5eb53da451aa0a1d929d95e8d6c1d)      
 Homework: 
-[Assignment]() --- 
+[Assignment](https://piazza.com/class_profile/get_resource/ihbf4oo8gc36od/iopz99i6wco4qe) --- 
 Due by 5pm on Friday, June 3rd
 
 
