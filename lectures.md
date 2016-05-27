@@ -7,6 +7,12 @@ permalink: /lectures/
 **Week 9**: 
 [SLR Inference](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_slr_inference.pdf),
 [MLR](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_mlr.pdf)   
+Code: 
+[R regression](https://github.com/mlakolar/BUS41000/raw/master/slides/09_regression.R),
+[R LS Monte Carlo](https://github.com/mlakolar/BUS41000/raw/master/slides/09_LSMonteCarlo.R)   
+Example: 
+[NBA Height and Weight](https://github.com/mlakolar/BUS41000/raw/master/slides/09_example_nba.pdf),
+[MBA Grades](https://github.com/mlakolar/BUS41000/raw/master/slides/09_example_grade.pdf)    
 Review session:
 [Video](https://media.chicagobooth.edu/Mediasite6/Play/ab79a5eb53da451aa0a1d929d95e8d6c1d)      
 Homework: 
