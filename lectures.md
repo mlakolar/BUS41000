@@ -7,6 +7,12 @@ permalink: /lectures/
 **Week 9**: 
 [SLR Inference](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_slr_inference.pdf),
 [MLR](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_mlr.pdf)   
+Review session:
+[Video](https://media.chicagobooth.edu/Mediasite6/Play/ab79a5eb53da451aa0a1d929d95e8d6c1d)      
+Homework: 
+[Assignment]() --- 
+Due by 5pm on Friday, June 3rd
+
 
 
 **Week 8**:
