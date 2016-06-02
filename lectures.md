@@ -4,6 +4,9 @@ title: Lectures
 permalink: /lectures/
 ---
 
+**Week 10**:   
+[Logistic Regression](https://github.com/mlakolar/BUS41000/raw/master/slides/10_logistic_regression.pdf)
+
 **Week 9**: 
 [SLR Inference](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_slr_inference.pdf),
 [MLR](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_mlr.pdf)   
