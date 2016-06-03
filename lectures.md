@@ -8,6 +8,8 @@ permalink: /lectures/
 [Logistic Regression](https://github.com/mlakolar/BUS41000/raw/master/slides/10_logistic_regression.pdf)  
 Example: 
 [Tabloid Data](https://github.com/mlakolar/BUS41000/raw/master/slides/10_example_tabloid.pdf)  
+Code: 
+[R logistic regression](https://github.com/mlakolar/BUS41000/raw/master/slides/10_logistic_regression.R)   
 Review session: 
 Video  
 
