@@ -11,7 +11,7 @@ Example:
 Code: 
 [R logistic regression](https://github.com/mlakolar/BUS41000/raw/master/slides/10_logistic_regression.R)   
 Review session: 
-Video  
+[Video](https://media.chicagobooth.edu/Mediasite6/Play/6450f7bc031b498aab46a1611dde4c681d)  
 
 **Week 9**: 
 [SLR Inference](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_slr_inference.pdf),
