@@ -5,7 +5,11 @@ permalink: /lectures/
 ---
 
 **Week 10**: 
-[Logistic Regression](https://github.com/mlakolar/BUS41000/raw/master/slides/10_logistic_regression.pdf)
+[Logistic Regression](https://github.com/mlakolar/BUS41000/raw/master/slides/10_logistic_regression.pdf)  
+Example: 
+[Tabloid Data](https://github.com/mlakolar/BUS41000/raw/master/slides/10_example_tabloid.pdf)  
+Review session: 
+Video  
 
 **Week 9**: 
 [SLR Inference](https://github.com/mlakolar/BUS41000/raw/master/slides/09_lecture_slr_inference.pdf),
